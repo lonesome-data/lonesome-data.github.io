@@ -115,6 +115,6 @@ function toggleAbout(event) {
     }, 1000);
   }
   else {
-    gaEvent('about Kostis');
+    gaEvent('about Sean');
   }
 }
