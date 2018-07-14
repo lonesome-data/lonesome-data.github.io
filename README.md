@@ -1,39 +1,11 @@
 ### Welcome
 
-This is the github page of lonesome-data
+This is the README.md file for the github repo page of [Sean Forester](https://lonesome-data.github.io/)
 
-You can use the [editor on GitHub](https://github.com/lonesome-data/lonesome-data.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[Edit](https://github.com/lonesome-data/lonesome-data.github.io/edit/master/README.md) on GitHub or choice editor to maintain and preview the content for website.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lonesome-data/lonesome-data.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Commits to this repository results in GitHub Pages running [Jekyll](https://jekyllrb.com/) to rebuild the pages in this site.
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble?  [Contact](mailto: 19rwe14+GitHub+TroubleShoot@gmail.com) me and I will you sort it out.
