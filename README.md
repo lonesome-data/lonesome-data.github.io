@@ -4,7 +4,7 @@ This is the README.md file for the github repo page of [Sean Forester](https://l
 
 [Edit](https://github.com/lonesome-data/lonesome-data.github.io/edit/master/README.md) on GitHub or choice editor to maintain and preview the content for website.
 
-Commits to this repository results in GitHub Pages running [Jekyll](https://jekyllrb.com/) to rebuild the pages in this site.
+Commits to this repository result in GitHub Pages running [Jekyll](https://jekyllrb.com/) to rebuild the pages in this site.
 
 ### Support or Contact
 
