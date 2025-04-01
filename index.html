@@ -66,8 +66,7 @@
                 </nav>
             </header>
 
-            <details id="about">
-                <summary onclick="toggleAbout(event);"><a>Professional Summary</a></summary>
+            <details id="about" open>  <summary onclick="toggleAbout(event);"><a>Professional Summary</a></summary>
                 <div>
                     <h2><b>AI/ML Engineering Leader & Strategic Advisor</b></h2>
                     <p>
@@ -107,4 +106,40 @@
                             data-share-badge-host="https://www.credly.com"></div>
                         <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
                         <div data-iframe-width="150" data-iframe-height="270"
-                            data-share-badge-id="ba7bd5ab-4d86
+                            data-share-badge-id="ba7bd5ab-4d86-4ce9-8dd6-71a14cebcefb"
+                            data-share-badge-host="https://www.credly.com"></div>
+                        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                        <div data-iframe-width="150" data-iframe-height="270"
+                            data-share-badge-id="95cc6da0-6b17-45e2-8d91-18709b3b2598"
+                            data-share-badge-host="https://www.credly.com"></div>
+                        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                    </div>
+                </div>
+
+            <div id="footer">
+
+                <span class="copyright">&copy; Web Development by <a href="https://github.com/maninak"
+                        title="GitHub of Maninaks">
+                        Kostis Maninakis</a> <span id="year"></span>, Some Rights Reserved</span>
+                <script type="text/javascript">
+                    document.getElementById("year").innerText = new Date().getFullYear();
+                </script>
+                <script type="text/javascript" src="./assets/js/main.js"></script>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function toggleAbout(event) {
+            var x = document.getElementById("about");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            event.stopPropagation();
+        }
+    </script>
+</body>
+
+</html>
