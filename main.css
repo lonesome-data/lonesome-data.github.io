@@ -41,11 +41,11 @@ details ul {
 }
 
 #content .section > *:not(.expandable) { /* Target all direct children of .section EXCEPT those with class .expandable */
-  display: none;
-  padding: 20px;
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+    display: none;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .expandable {
