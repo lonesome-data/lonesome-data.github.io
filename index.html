@@ -66,8 +66,9 @@
                 </nav>
             </header>
 
-            <details id="about" open>  <summary onclick="toggleAbout(event);"><a>Professional Summary</a></summary>
-                <div>
+            <div id="content">
+                <div class="expandable" onclick="toggleSection('summary')">Professional Summary &#8594;</div>
+                <div id="summary" class="section">
                     <h2><b>AI/ML Engineering Leader & Strategic Advisor</b></h2>
                     <p>
                         Results-driven leader with 10+ years of experience building and scaling high-performing
@@ -76,8 +77,10 @@
                         maximize impact.
                     </p>
 
-                    <br><br>
+                </div>
 
+                <div class="expandable" onclick="toggleSection('skills')">Key Skills &#8594;</div>
+                <div id="skills" class="section">
                     <h3><b>Key Skills</b></h3>
                     <ul>
                         <li>Amazon "Working Backwards" Planning</li>
@@ -89,8 +92,10 @@
                         <li>Cross-Functional Collaboration</li>
                     </ul>
 
-                    <br><br>
+                </div>
 
+                <div class="expandable" onclick="toggleSection('certs')">Certifications &#8594;</div>
+                <div id="certs" class="section">
                     <h3><b>Certifications</b></h3>
                     <div class="credly-badge-container">
                         <div data-iframe-width="150" data-iframe-height="270"
@@ -115,6 +120,7 @@
                         <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
                     </div>
                 </div>
+            </div>
 
             <div id="footer">
 
@@ -130,14 +136,16 @@
         </div>
     </div>
     <script>
-        function toggleAbout(event) {
-            var x = document.getElementById("about");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-            event.stopPropagation();
+        function toggleSection(sectionId) {
+            const sections = ['summary', 'skills', 'certs'];
+            sections.forEach(id => {
+                const section = document.getElementById(id);
+                if (id === sectionId) {
+                    section.style.display = (section.style.display === 'block') ? 'none' : 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
         }
     </script>
 </body>
