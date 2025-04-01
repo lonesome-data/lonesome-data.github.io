@@ -66,9 +66,9 @@
                 </nav>
             </header>
 
-            <div id="content">
-                <div class="expandable" onclick="toggleSection('summary')">Professional Summary &#8594;</div>
-                <div id="summary" class="section">
+            <details id="about">
+                <summary onclick="toggleAbout(event);"><a>Professional Summary</a></summary>
+                <div>
                     <h2><b>AI/ML Engineering Leader & Strategic Advisor</b></h2>
                     <p>
                         Results-driven leader with 10+ years of experience building and scaling high-performing
@@ -77,10 +77,8 @@
                         maximize impact.
                     </p>
 
-                </div>
+                    <br><br>
 
-                <div class="expandable" onclick="toggleSection('skills')">Key Skills &#8594;</div>
-                <div id="skills" class="section">
                     <h3><b>Key Skills</b></h3>
                     <ul>
                         <li>Amazon "Working Backwards" Planning</li>
@@ -92,10 +90,8 @@
                         <li>Cross-Functional Collaboration</li>
                     </ul>
 
-                </div>
+                    <br><br>
 
-                <div class="expandable" onclick="toggleSection('certs')">Certifications &#8594;</div>
-                <div id="certs" class="section">
                     <h3><b>Certifications</b></h3>
                     <div class="credly-badge-container">
                         <div data-iframe-width="150" data-iframe-height="270"
@@ -111,43 +107,4 @@
                             data-share-badge-host="https://www.credly.com"></div>
                         <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
                         <div data-iframe-width="150" data-iframe-height="270"
-                            data-share-badge-id="ba7bd5ab-4d86-4ce9-8dd6-71a14cebcefb"
-                            data-share-badge-host="https://www.credly.com"></div>
-                        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                        <div data-iframe-width="150" data-iframe-height="270"
-                            data-share-badge-id="95cc6da0-6b17-45e2-8d91-18709b3b2598"
-                            data-share-badge-host="https://www.credly.com"></div>
-                        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                    </div>
-                </div>
-            </div>
-
-            <div id="footer">
-
-                <span class="copyright">&copy; Web Development by <a href="https://github.com/maninak"
-                        title="GitHub of Maninaks">
-                        Kostis Maninakis</a> <span id="year"></span>, Some Rights Reserved</span>
-                <script type="text/javascript">
-                    document.getElementById("year").innerText = new Date().getFullYear();
-                </script>
-                <script type="text/javascript" src="./assets/js/main.js"></script>
-            </div>
-
-        </div>
-    </div>
-    <script>
-        function toggleSection(sectionId) {
-            const sections = ['summary', 'skills', 'certs'];
-            sections.forEach(id => {
-                const section = document.getElementById(id);
-                if (id === sectionId) {
-                    section.style.display = (section.style.display === 'block') ? 'none' : 'block';
-                } else {
-                    section.style.display = 'none';
-                }
-            });
-        }
-    </script>
-</body>
-
-</html>
+                            data-share-badge-id="ba7bd5ab-4d86
