@@ -1,0 +1,5 @@
+/* Add this to your main.css file */
+details ul {
+  padding-left: 20px; /* Adjust this value as needed */
+  margin-left: 0;
+}
