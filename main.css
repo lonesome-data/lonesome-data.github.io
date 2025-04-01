@@ -39,3 +39,19 @@ details ul {
     max-width: 150px;
   }
 }
+
+#content .section {
+    display: none; /* Initially hide the content */
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.expandable {
+    cursor: pointer; /* Change cursor on hover to indicate clickability */
+    padding: 10px;
+    background-color: #f0f0f0; /* Light gray background */
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
