@@ -723,6 +723,7 @@
   }
 }
 
+/* EXPANDABLE LIST */
 .expandable-list .list-item {
     border-bottom: 1px solid #ddd;
     margin-bottom: 10px;
@@ -754,6 +755,10 @@
     display: block; /* Show content when expanded */
 }
 
-.expandable-list .expanded .expand-icon {
-    content: "-"; /* Change icon when expanded */
+.expandable-list .expand-icon::before {
+    content: "+"; /* Default icon */
+}
+
+.expandable-list .expanded .expand-icon::before {
+    content: "-"; /* Changed icon when expanded */
 }
