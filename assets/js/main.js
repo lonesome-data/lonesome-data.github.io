@@ -1,14 +1,8 @@
-/* GOOGLE ANALYTICS */
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-70469459-6', 'auto');
-ga('send', 'pageview');
-
 function gaEvent(clickedItem){
-  ga('send', 'event', clickedItem, 'click');
+  gtag('event', 'click', {
+    'event_category': clickedItem,
+    'event_label': 'click'
+  });
 }
 
 
@@ -118,3 +112,15 @@ function toggleAbout(event) {
     gaEvent('about Sean');
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const listItems = document.querySelectorAll('.expandable-list .list-item');
+
+    listItems.forEach(item => {
+        const title = item.querySelector('.list-title');
+
+        title.addEventListener('click', function() {
+            item.classList.toggle('expanded');
+        });
+    });
+});
