@@ -52,27 +52,26 @@
                     </div>
                 </details>
 
-                <div class="expandable-list">
-                    <div class="list-item">
-                        <div class="list-title">Skills <span class="expand-icon">+</span></div>
-                        <div class="list-content">
-                            <ul>
-                                <li>Python (Pandas, NumPy, Scikit-learn)</li>
-                                <li>SQL</li>
-                                <li>R</li>
-                            </ul>
-                        </div>
+                <details id="skills">
+                    <summary>Skills</summary>
+                    <div>
+                        <ul>
+                            <li>Python (Pandas, NumPy, Scikit-learn)</li>
+                            <li>SQL</li>
+                            <li>R</li>
+                        </ul>
                     </div>
-                    <div class="list-item">
-                        <div class="list-title">Certificates <span class="expand-icon">+</span></div>
-                        <div class="list-content">
-                            <ul>
-                                <li>Data Science Professional Certificate</li>
-                                <li>Advanced Machine Learning Specialization</li>
-                            </ul>
-                        </div>
+                </details>
+
+                <details id="certificates">
+                    <summary>Certificates</summary>
+                    <div>
+                        <ul>
+                            <li>Data Science Professional Certificate</li>
+                            <li>Advanced Machine Learning Specialization</li>
+                        </ul>
                     </div>
-                </div>
+                </details>
 
                 <nav>
                     <ul class="soft-shadow">
@@ -122,19 +121,6 @@
 
         </div>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const listItems = document.querySelectorAll('.expandable-list .list-item');
-
-            listItems.forEach(item => {
-                const title = item.querySelector('.list-title');
-
-                title.addEventListener('click', function() {
-                    item.classList.toggle('expanded');
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>
