@@ -1,141 +1,185 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135025325-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-135025325-1');
-    </script>
-
-    <title>Sean Forester (forester) &mdash; Professional Website</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content='from Marine Corps to Data Science.'>
+    <title>Sean Forester | Strategic AI Transformation Leader</title>
+    <meta name="description"
+        content="Strategic AI Transformation Leader & Enterprise AI Strategist. 12+ years of high-stakes AI/ML leadership and technical innovation.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://github.com/lonesome-data/lonesome-data.github.io/blob/master/assets/images/preview-lonesome-data.github.io.png">
+    <meta property="og:title" content="Sean Forester | Strategic AI Transformation Leader">
+    <meta property="og:description"
+        content="Strategic AI Transformation Leader & Enterprise AI Strategist.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sean Forester | Strategic AI Transformation Leader">
     <meta name="google-site-verification" content="mP6LODLZKOv-g3-o4u9GFvXRx89HUDxku34jBAKWYyE" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <meta http-equiv="refresh" content="4;url=https://lonesome-data.github.io/professional-portfolio/">
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a1a;
+            color: #e2e8f0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .glow-container {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .glow-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.35;
+        }
+
+        .orb-1 {
+            width: 500px;
+            height: 500px;
+            background: #6366f1;
+            top: -10%;
+            left: -5%;
+            animation: drift 12s ease-in-out infinite alternate;
+        }
+
+        .orb-2 {
+            width: 400px;
+            height: 400px;
+            background: #22d3ee;
+            bottom: -10%;
+            right: -5%;
+            animation: drift 10s ease-in-out infinite alternate-reverse;
+        }
+
+        @keyframes drift {
+            from { transform: translate(0, 0); }
+            to { transform: translate(40px, 30px); }
+        }
+
+        .card {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 16px;
+            padding: 3rem 3.5rem;
+            max-width: 520px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #e2e8f0, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: #9ca3af;
+            margin-bottom: 2rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .redirect-msg {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        a.enter {
+            display: inline-block;
+            padding: 0.7rem 2rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #fff;
+            background: rgba(99, 102, 241, 0.25);
+            border: 1px solid rgba(99, 102, 241, 0.5);
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            letter-spacing: 0.02em;
+        }
+
+        a.enter:hover {
+            background: rgba(99, 102, 241, 0.45);
+            border-color: #6366f1;
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border: 2px solid rgba(99, 102, 241, 0.3);
+            border-top-color: #6366f1;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            vertical-align: middle;
+            margin-right: 0.5rem;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .auto-redirect {
+            font-size: 0.75rem;
+            color: #6b7280;
+            margin-top: 1.5rem;
+        }
+    </style>
 </head>
 
-<body class="loading">
-    <div id="wrapper">
-        <div id="main" class="gradient">
+<body>
+    <div class="glow-container">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
 
-            <header id="header">
-
-                <h1 class="soft-shadow">Sean Forester</h1>
-
-               <details id="about">
-                <summary class="toggle-section">Professional Summary</summary>
-                <div>
-                    <h2>AI/ML Engineering Leader & Strategic Advisor</h2>
-                    <p>
-                        Seasoned AI Leader blending 12+ years of professional services leadership with deep technical expertise in AI/ML/GenAI. Proven ability to develop AI strategy, 
-                        drive multi-million dollar revenue growth through client engagement and pre-sales, lead complex solution delivery, and build high-performing global teams. Adept at translating 
-                        AI capabilities into tangible business value across diverse industries.
-                    </p>
-                </div>
-            </details>
-
-            <details id="skills">
-                <summary class="toggle-section">Skills</summary>
-                <div>
-                    <h3>Field-proven Skills</h3>
-                    <ul>
-                        <li>Amazon "Working Backwards" Planning</li>
-                        <li>Stakeholder Alignment</li>
-                        <li>Team Buy-In and Consensus Building</li>
-                        <li>Talent Retention and Development</li>
-                        <li>Large-Scale System Architecture</li>
-                        <li>Strategic Technology Planning</li>
-                        <li>Cross-Functional Collaboration</li>
-                    </ul>
-                </div>
-            </details>
-            
-           <details id="certificates">
-            <summary class="toggle-section">Certificates</summary>
-            <div>
-                <h3>Technical Certifications</h3>
-                <div class="credly-badge-container">
-                    <div data-iframe-width="150" data-iframe-height="270"
-                         data-share-badge-id="8ff21e02-2cc6-4651-8f33-330907f7804d"
-                         data-share-badge-host="https://www.credly.com"></div>
-                    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                    <div data-iframe-width="150" data-iframe-height="270"
-                         data-share-badge-id="c967e523-4393-4e2e-9d19-ebed3e44ea8f"
-                         data-share-badge-host="https://www.credly.com"></div>
-                    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                    <div data-iframe-width="150" data-iframe-height="270"
-                         data-share-badge-id="af489289-8fbe-49a5-a8f6-445dfabd9428"
-                         data-share-badge-host="https://www.credly.com"></div>
-                    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                    <div data-iframe-width="150" data-iframe-height="270"
-                         data-share-badge-id="ba7bd5ab-4d86-4ce9-8dd6-71a14cebcefb"
-                         data-share-badge-host="https://www.credly.com"></div>
-                    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                    <div data-iframe-width="150" data-iframe-height="270"
-                         data-share-badge-id="95cc6da0-6b17-45e2-8d91-18709b3b2598"
-                         data-share-badge-host="https://www.credly.com"></div>
-                    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                </div>
-            </div>
-        </details>
-
-                <nav>
-                    <ul class="soft-shadow">
-                        <link rel="stylesheet" href="./assets/css/main.css" />
-                        <li>
-                            <a title="Resume"
-                                href="https://lonesome-data.github.io/assets/sean_forester_resume.pdf"
-                                target="_blank" class="icon fa-file-text-o" onclick="gaEvent('Resume');">
-                                <span class="label">Resume</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a title="Github" href="https://github.com/lonesome-data/Portfolio/blob/master/README.md"
-                                target="_blank" class="icon fa-github" onclick="gaEvent('Github');">
-                                <span class="label">Github</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a title="LinkedIn" href="https://www.linkedin.com/in/smforester/" target="_blank"
-                                class="icon fa-linkedin" onclick="gaEvent('LinkedIn');">
-                                <span class="label">LinkedIn</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a title="Email" href="mailto:19rwe14+github+page@gmail.com?Subject=Hey%20there!"
-                                target="_blank" class="icon fa-envelope-o" onclick="gaEvent('Email');">
-                                <span class="label">Email</span>
-                            </a>
-                        </li>
-
-                    </ul>
-                </nav>
-            </header>
-
-            <div id="footer">
-
-                <span class="copyright">&copy; Web Development by <a href="https://github.com/maninak"
-                        title="GitHub of Maninaks"> Kostis Maninakis</a> <span id="year"></span>, Some Rights Reserved</span>
-                <script type="text/javascript">
-                    document.getElementById("year").innerText = new Date().getFullYear();
-                </script>
-                <script type="text/javascript" src="./assets/js/main.js"></script>
-            </div>
-
-        </div>
+    <div class="card">
+        <h1>Sean Forester</h1>
+        <div class="subtitle">Strategic AI Transformation Leader</div>
+        <p class="redirect-msg">
+            Redirecting to portfolio.
+        </p>
+        <a class="enter" href="https://lonesome-data.github.io/professional-portfolio/">
+            Enter Portfolio
+        </a>
+        <p class="auto-redirect">
+            <span class="spinner"></span> Auto-redirecting in a few seconds
+        </p>
     </div>
 </body>
 
